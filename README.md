@@ -131,4 +131,4 @@ type Auditor interface {
 
 Twistlock authorization plugin is licensed under the Apache License, Version 2.0.
 
-See [LICENSE](https://github.com/twistlock/authz/blob/master/LICENSE) for the full license text.
+See [LICENSE](https://github.com/twistlock/authz/blob/master/LICENSE) for the full license text. 

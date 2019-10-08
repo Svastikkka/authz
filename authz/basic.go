@@ -7,7 +7,7 @@ import (
 	logrus_syslog "github.com/Sirupsen/logrus/hooks/syslog"
 	"github.com/docker/docker/pkg/authorization"
 	"github.com/howeyc/fsnotify"
-	"github.com/twistlock/authz/core"
+	"github.com/KurooUsagy/authz/core"
 	"io/ioutil"
 	"log/syslog"
 	"net/http"

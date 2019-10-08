@@ -7,8 +7,8 @@ import (
 
 	"github.com/Sirupsen/logrus"
 	"github.com/codegangsta/cli"
-	"github.com/twistlock/authz/authz"
-	"github.com/twistlock/authz/core"
+	"github.com/KurooUsagy/authz/authz"
+	"github.com/KurooUsagy/authz/core"
 )
 
 const (

@@ -1,4 +1,4 @@
-IMAGE_NAME ?= docker.io/twistlock/authz-broker
+IMAGE_NAME ?= docker.io/KurooUsagy/authz-broker
 PACKAGES=$(shell go list ./...)
 VERSION ?= v1.0.0
 IMAGE_VERSION ?= $(VERSION)

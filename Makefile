@@ -1,6 +1,6 @@
-IMAGE_NAME ?= docker.io/KurooUsagy/authz-broker
+IMAGE_NAME ?= docker.io/${DOCKER_USERNAME}/authz-broker
 PACKAGES=$(shell go list ./...)
-VERSION ?= v1.0.0
+VERSION ?= latest
 IMAGE_VERSION ?= $(VERSION)
 
 .PHONY: all binary test image vet lint clean
@@ -24,6 +24,8 @@ lint:
 
 image: test
 	docker build -t ${IMAGE_NAME}:${IMAGE_VERSION} .
+	echo ${DOCKER_PASSWORD} | docker login -u ${DOCKER_USERNAME} --password-stdin
+    docker push ${IMAGE_NAME}:${IMAGE_VERSION}
 
 binary: lint fmt vet
 	mkdir -p bin/
